@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import "./Calendar.css";
+import "./calendar.css";
 
 const STORAGE_KEY = "studysync_calendar_events";
 
