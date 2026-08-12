@@ -1,0 +1,293 @@
+/* =====================================
+   STUDYSYNC NAVBAR
+   Green + Gray Design System
+===================================== */
+
+.navbar-wrapper {
+  width: 100%;
+  padding: 18px 24px;
+  box-sizing: border-box;
+
+  background: #f3f5f4;
+}
+
+
+/* Main Navbar */
+
+.navbar {
+  max-width: 1250px;
+  min-height: 70px;
+
+  margin: 0 auto;
+  padding: 0 22px;
+
+  display: flex;
+  align-items: center;
+
+  background: #1f2937;
+
+  border: 1px solid #374151;
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.12);
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+
+  margin-right: 45px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #22c55e;
+
+  border-radius: 10px;
+
+  font-size: 20px;
+}
+
+.logo-text {
+  color: #f9fafb;
+
+  font-size: 20px;
+  font-weight: 750;
+
+  letter-spacing: -0.4px;
+}
+
+.logo-text span {
+  color: #4ade80;
+}
+
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  flex: 1;
+}
+
+.nav-link {
+  position: relative;
+
+  padding: 10px 15px;
+
+  color: #d1d5db;
+
+  text-decoration: none;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background: #374151;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  background: #16a34a;
+}
+
+.nav-link.active:hover {
+  background: #15803d;
+}
+
+
+/* =====================================
+   USER AREA
+===================================== */
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+/* User info */
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #374151;
+
+  border: 1px solid #4b5563;
+
+  color: #86efac;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.user-name {
+  max-width: 120px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  color: #f9fafb;
+
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.user-status {
+  color: #9ca3af;
+
+  font-size: 10px;
+}
+
+
+/* =====================================
+   LOGOUT
+===================================== */
+
+.logout-button {
+  padding: 9px 15px;
+
+  border: 1px solid #4b5563;
+  border-radius: 9px;
+
+  background: transparent;
+
+  color: #d1d5db;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.logout-button:hover {
+  background: #374151;
+
+  border-color: #6b7280;
+
+  color: #ffffff;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .logo {
+    margin-right: 20px;
+  }
+
+  .user-details {
+    display: none;
+  }
+
+  .navbar-links {
+    gap: 2px;
+  }
+
+  .nav-link {
+    padding: 9px 11px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .navbar-wrapper {
+    padding: 10px;
+  }
+
+  .navbar {
+    min-height: auto;
+
+    padding: 12px;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .navbar-links {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .navbar-user {
+    gap: 8px;
+  }
+
+  .logout-button {
+    padding: 8px 11px;
+  }
+
+}
